@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lucía Montero">
+        <title>Tabla compleja</title>
+    </head>
+    <body>
+        <table border="1" style="border: 3px solid; border-collapse:collapse; border-color: #905177;">
+            <caption style="background-color: blue; border: 3px solid #905177;">HORARIO DEL CURSO 2024-25</caption>
+            <colgroup>
+                <col style="background-color: greenyellow;">
+            </colgroup>
+            <thead>
+                <tr style="background-color: pink;">
+                    <strong>
+                    <th>HORA</th>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIÉRCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                    </strong>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                    <td>9:00</td>
+                    <td rowspan="2">Matemáticas</td>
+                    <td>Lengua</td>
+                    <td>Inglés</td>
+                    <td colspan="2" style="text-align: center;">Ciencias</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Historia</td>
+                    <td>Ciencias</td>
+                    <td>Matemáticas</td>
+                    <td>Lengua</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td colspan="5" style="text-align: center; background-color: papayawhip;"><strong>RECREO</strong></td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td>Inglés</td>
+                    <td rowspan="2">Ciencias</td>
+                    <td>Matemáticas</td>
+                    <td>Lengua</td>
+                    <td>Historia</td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td>Historia</td>
+                    <td>Ciencias</td>
+                    <td>Matemáticas</td>
+                    <td>Inglés</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
