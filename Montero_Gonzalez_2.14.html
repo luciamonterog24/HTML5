@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lucía Montero">
+    <style>
+        h2{text-align: center;}
+    </style>
     <title>Formulario 1</title>
 </head>
 <body>
+    <h2>HOJA DE INSCRIPCIÓN<BR>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
     <fieldset>
-        <legend>DATOS PERSONALES</legend>
+        <legend><b>DATOS PERSONALES</b></legend>
         <table>
             <tbody>
                 <tr>
@@ -22,7 +26,7 @@
                     <td><input type="text" name="dni"/></td>
                 </tr>
                 <tr>
-                    <td><label for="locNacimiento">LOC. NACIMIENTO</label></td>
+                    <td><label for="locNacimiento">LOC. NACIMIENTO:</label></td>
                     <td><label for="provincia">PROVINCIA:</label></td>
                     <td><label for="fechaNacimiento">FECHA NACIMIENTO:</label></td>
                 </tr>
@@ -42,7 +46,7 @@
                     <td><input type="date" name="fechaNacimiento"/></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><label for="direccion">DIRECCIÓN</label></td>
+                    <td colspan="2"><label for="direccion">DIRECCIÓN:</label></td>
                     <td><label for="codPostal">COD. POSTAL:</label></td>
                 </tr>
                 <tr>
@@ -62,9 +66,37 @@
     </fieldset>
     <br>
     <fieldset>
-        <legend>FORMA DE ACCESO</legend>
-        <label for="formAcceso">
-
+        <legend><b>FORMA DE ACCESO</b></legend>
+        <label for="formAcceso">Forma de acceso</label><br><br>
+        <div style="margin-left: 20px;">
+        <input type="radio" name="formAcceso" name="directo">
+        <label for="directo">DIRECTO</label>
+        
+        <div style="margin-left: 20px;">
+            <input type="radio" name="directo">BACHILLERATO LOGSE<br>
+            
+            <input type="radio" name="directo">BACHILLERATO EXPERIMENTAL<br>
+            
+            <input type="radio" name="directo">COU<br>
+            
+            <input type="radio" name="directo">FP2<br>
+            
+            <input type="radio" name="directo">OTROS<br>
+        </div>
+        
+        <input type="radio" name="formAcceso" name="pruebaLibre">
+        <label for="pruebaLibre">PRUEBA LIBRE</label>
+        </div>
     </fieldset>
+    <br>
+    <fieldset>
+        <legend><b>DOCUMENTOS ADJUNTADOS</b></legend>
+        <input type="checkbox" name="fotDNI"/>Fotocopia DNI<br><br>
+        <input type="checkbox" name="certAcademico"/>Certificado Académico<br><br>
+        <input type="checkbox" name="otros"/>Otros documentos (Especificar) <textarea cols="15" rows="1"></textarea><br><br>
+        <button type="submit">Seleccionar archivo</button>  Ningún archivo selec.
+    </fieldset>
+    <br>
+    <button type="submit">Enviar solicitud</button>
 </body>
 </html>
