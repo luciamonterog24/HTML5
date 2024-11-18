@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucía Montero">
+    <title>Formulario s</title>
+</head>
+<body>
+    <h2>Formulario de reserva de salas</h2>
+    <table>
+        <tbody>
+            <tr style="background-color: gainsboro;">
+                <td><label for="nombre">Tu nombre:*</label></td>
+                <td><input type="text" name="nombre" required placeholder="nombre"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Tu correo electrónico:*</label></td>
+                <td><input type="email" name="email" required placeholder="correo electrónico"/></td>
+            </tr>
+            <tr style="background-color: gainsboro;">
+                <td><label for="departamento">Departamento:*</label></td>
+                <td>
+                    <select name="departamento">
+                        <option>Ventas</option>
+                        <option>Almacén</option>
+                        <option>Tienda</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sala">Tipo de sala que desea reservar:*</label></td>
+                <td>
+                    <div style="text-align: center;">
+                        <input type="radio" name="sala">Tipo A</A><br>
+                        
+                        <input type="radio" name="sala">Tipo B</B><br>
+                        
+                        <input type="radio" name="sala">Tipo C<br>
+                    </div>
+                </td>
+            </tr>
+            <tr style="background-color: gainsboro;">
+                <td><label for="requisitos">Requisitos extra:</label></td>
+                <td>
+                    <div style="text-align: center;">
+                        <input type="checkbox" name="requisitos">Caballete y bolígrafos</A><br>
+                        
+                        <input type="checkbox" name="requisitos">Televisión</B><br>
+                        
+                        <input type="checkbox" name="requisitos">Café, té y agua<br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fechaReserva">Fecha de la reserva:*</label></td>
+                <td><input type="date" name="fechaReserva" required/></td>
+            </tr>
+            <tr style="background-color: gainsboro;">
+                <td><label for="horaReserva">Hora de la reserva:*</label></td>
+                <td><input type="time" name="horaReserva" required/></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
