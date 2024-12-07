@@ -7,6 +7,7 @@
     <style>
         h1, h3{text-align: center;}
         label{font-weight: bold;}
+        div{color: red;}
     </style>
     <title>Mi página personal</title>
 </head>
@@ -16,7 +17,9 @@
         <legend><b>DATOS PERSONALES</b></legend>
             <table>
                 <tbody>
-                    <h3>FOTO</h3>
+                    <h3>
+                        <img src="imagenes/foto-carne.png"/>
+                    </h3>
                     <tr>
                         <td><h3>Fecha de nacimiento:</h3></td>
                         <td>24 de Junio de 1999</td>
@@ -36,22 +39,22 @@
                 <tr>
                     <td><label for="nombre">Nombre</label></td>
                     <td><label for="apellidos">Apellidos:</label></td>
-                    <td><label for="email">Correo electrónico</label></td>
+                    <td><label for="email">Correo electrónico<div>*</div></label></td>
                 </tr>
                 <tr>
                     <td><input type="text" name="nombre"/></td>
                     <td><input type="text" name="apellidos"/></td>
-                    <td><input type="email" name="email" placeholder="email@hotmail.com"/></td>
+                    <td><input type="email" name="email" placeholder="email@gmail.com" required/></td>
                 </tr>
                 <tr>
                     <td><label for="telefono">Teléfono</label></td>
                     <td></td>
-                    <td><label for="contraseña">Contraseña</label></td>
+                    <td><label for="contraseña">Contraseña<div>*</div></label></td>
                 </tr>
                 <tr>
                     <td><input type="number" name="telefono"/></td>
                     <td></td>
-                    <td><input type="password" name="contraseña"/></td>
+                    <td><input type="password" name="contraseña" required/></td>
                 </tr>
             </tbody>
         </table>
