@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lucía Montero">
     <style>
-        h1, h3{text-align: center;}
-        label{font-weight: bold;}
-        div{color: red;}
+        body{
+            background-color: #a3c3bd;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            }
+        h1, h3{
+            text-align: center;}
+        label{
+            font-weight: bold;}
+        div{
+            color: red;}
+        fieldset {
+            background-color: rgb(236, 255, 246);}
+        .button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #6f8480;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
     </style>
     <title>Mi página personal</title>
 </head>
@@ -34,7 +57,7 @@
     <br>
     <fieldset>
         <legend><b>FORMULARIO DE ACCESO</b></legend>
-        <table>
+        <table style="width: 100%;">
             <tbody>
                 <tr>
                     <td><label for="nombre">Nombre</label></td>
@@ -60,7 +83,7 @@
         </table>
         <br>
         <form action="aficiones.html">
-            <input type="submit" value="Entrar" />
+            <input class="button" type="submit" value="Entrar" />
         </form>
     </fieldset>
 </body>
